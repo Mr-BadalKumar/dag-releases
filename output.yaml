@@ -40,53 +40,71 @@ spec:
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "29"
     - name: lens
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "24"
     - name: notifyer-deploy
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "26"
     - name: kubewatch
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "20"
     - name: casbin
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "29"
     - name: app-sync-cronjob
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "27"
     - name: image-scanner
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "28"
     - name: orchestrator
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "22"
     - name: dashboard
       container:
         image: badal773/release:02
         env:
+          - name: APPID
+            value: "1"
           - name: CI_ARTIFACT_ID
             value: "21"
