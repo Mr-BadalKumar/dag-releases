@@ -38,7 +38,7 @@ spec:
             dependencies: ['orchestrator']
     - name: casbin
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "17"
@@ -50,7 +50,7 @@ spec:
             value: "29"
     - name: lens
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "12"
@@ -62,7 +62,7 @@ spec:
             value: "24"
     - name: notifyer-deploy
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "16"
@@ -74,7 +74,7 @@ spec:
             value: "26"
     - name: kubewatch
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "17"
@@ -86,7 +86,7 @@ spec:
             value: "20"
     - name: kubelink
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "14"
@@ -98,7 +98,7 @@ spec:
             value: "23"
     - name: app-sync-cronjob
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "18"
@@ -110,7 +110,7 @@ spec:
             value: "27"
     - name: image-scanner
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "15"
@@ -122,7 +122,7 @@ spec:
             value: "28"
     - name: orchestrator
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "8"
@@ -134,7 +134,7 @@ spec:
             value: "22"
     - name: dashboard
       container:
-        image: badal773/release:04
+        image: badal773/release:05
         env:
           - name: APPID
             value: "11"
