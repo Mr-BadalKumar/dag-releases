@@ -32,7 +32,7 @@ spec:
             dependencies: []
           - name: orchestrator
             template: orchestrator
-            dependencies: ['casbin,kubelink,kubewatch,lens,image-scanner']
+            dependencies: ['casbin','kubelink','kubewatch','lens','image-scanner']
           - name: dashboard
             template: dashboard
             dependencies: ['orchestrator']
