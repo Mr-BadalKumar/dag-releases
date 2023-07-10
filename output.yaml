@@ -21,8 +21,8 @@ spec:
           - name: kubewatch
             template: kubewatch
             dependencies: []
-          - name: casbin
-            template: casbin
+          - name: kubelink
+            template: kubelink
             dependencies: []
           - name: app-sync-cronjob
             template: app-sync-cronjob
@@ -41,6 +41,10 @@ spec:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "17"
+          - name: CD_PIPELINE_ID
+            value: "46"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
             value: "29"
@@ -49,6 +53,10 @@ spec:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "12"
+          - name: CD_PIPELINE_ID
+            value: "21"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
             value: "24"
@@ -57,6 +65,10 @@ spec:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "16"
+          - name: CD_PIPELINE_ID
+            value: "41"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
             value: "26"
@@ -65,22 +77,34 @@ spec:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "17"
+          - name: CD_PIPELINE_ID
+            value: "46"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
             value: "20"
-    - name: casbin
+    - name: kubelink
       container:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "14"
+          - name: CD_PIPELINE_ID
+            value: "31"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "29"
+            value: "23"
     - name: app-sync-cronjob
       container:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "18"
+          - name: CD_PIPELINE_ID
+            value: "51"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
             value: "27"
@@ -89,6 +113,10 @@ spec:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "15"
+          - name: CD_PIPELINE_ID
+            value: "36"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
             value: "28"
@@ -97,6 +125,10 @@ spec:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "8"
+          - name: CD_PIPELINE_ID
+            value: "8"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
             value: "22"
@@ -105,6 +137,10 @@ spec:
         image: badal773/release:02
         env:
           - name: APPID
+            value: "11"
+          - name: CD_PIPELINE_ID
+            value: "16"
+          - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
             value: "21"
