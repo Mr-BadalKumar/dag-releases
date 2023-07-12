@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
-  name: dag-test-2023-07-12 12:19:13
+  name: dag-test-2023-07-12-12:32:09
   namespace: argo
 spec:
   entrypoint: start
@@ -47,7 +47,7 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "71"
+            value: "90"
     - name: lens
       container:
         image: badal773/release:08
@@ -71,7 +71,7 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "70"
+            value: "92"
     - name: kubewatch
       container:
         image: badal773/release:08
@@ -83,7 +83,7 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "67"
+            value: "84"
     - name: kubelink
       container:
         image: badal773/release:08
@@ -107,7 +107,7 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "73"
+            value: "91"
     - name: image-scanner
       container:
         image: badal773/release:08
@@ -119,7 +119,7 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "69"
+            value: "89"
     - name: orchestrator
       container:
         image: badal773/release:08
@@ -131,7 +131,7 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "66"
+            value: "87"
     - name: dashboard
       container:
         image: badal773/release:08
@@ -143,4 +143,4 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "68"
+            value: "83"
