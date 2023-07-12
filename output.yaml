@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
-  name: dag-test
+  name: dag-test-2023-07-12 12:19:13
   namespace: argo
 spec:
   entrypoint: start
@@ -59,7 +59,7 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "64"
+            value: "86"
     - name: notifyer-deploy
       container:
         image: badal773/release:08
@@ -77,9 +77,9 @@ spec:
         image: badal773/release:08
         env:
           - name: APPID
-            value: "17"
+            value: "13"
           - name: CD_PIPELINE_ID
-            value: "46"
+            value: "26"
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
@@ -95,7 +95,7 @@ spec:
           - name: ENVID
             value: "1"
           - name: CI_ARTIFACT_ID
-            value: "65"
+            value: "85"
     - name: app-sync-cronjob
       container:
         image: badal773/release:08
